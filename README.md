@@ -35,11 +35,11 @@
    ```
 
 3. **เข้าใช้งานระบบ:**
-   * **หน้าจอแอดมินผู้จัดการระบบ:** เข้าไปที่ [http://localhost:5173/admin](http://localhost:5173/admin)
+   * **หน้าจอแอดมินผู้จัดการระบบ:** เข้าไปที่ [http://localhost/admin](http://localhost/admin)
      * *ชื่อเข้าใช้ (Username):* `admin`
      * *รหัสผ่าน (Password):* `admin1234`
    * **หน้าจอแสดงผล OBS Overlay:** นำลิงก์นี้ไปใส่ใน Browser Source ของโปรแกรม OBS Studio:
-     `http://localhost:5173/overlay?key=pakjaew_super_secret_token_2026`
+     `http://localhost/overlay?key=pakjaew_super_secret_token_2026`
 
 ---
 
@@ -81,9 +81,9 @@
 
 ## 🎲 วิธีการทดลองและเล่นฟีเจอร์เด่น!
 
-1. เข้าหน้าจอแอดมินที่ [http://localhost:5173/admin](http://localhost:5173/admin) (เข้าสู่ระบบด้วย `admin` / `admin1234`)
+1. เข้าหน้าจอแอดมินที่ `/admin` (ตัวอย่าง: `http://localhost/admin` หากรันผ่าน Docker หรือพอร์ต `5173` หากรันแบบ Manual) เข้าสู่ระบบด้วย `admin` / `admin1234`
 2. เปิดหน้าจอเบราว์เซอร์สำหรับจำลองผล OBS เพิ่มขึ้นมาอีกหนึ่งหน้าต่างที่:
-   👉 [http://localhost:5173/overlay?key=pakjaew_super_secret_token_2026&demo=true](http://localhost:5173/overlay?key=pakjaew_super_secret_token_2026&demo=true)
+   👉 `/overlay?key=pakjaew_super_secret_token_2026&demo=true`
    > [!NOTE]
    > การเติมตัวเลือก `&demo=true` จะแสดง **ปุ่มลอง Emotion จำลองด้านล่าง** และใส่พื้นหลังมืด เพื่อให้พี่ทดสอบการแสดงผลและเสียงได้ง่ายขึ้นโดยตรงผ่านเว็บเบราว์เซอร์ของพี่เองโดยไม่ต้องเปิดโปรแกรม OBS!
 3. สลับการตั้งค่าระบบเสียง (TTS Engine) เป็น **Gemini-TTS 🤖** บนหน้าแผงควบคุมแอดมิน
