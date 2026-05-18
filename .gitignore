@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+dist/
+build/
+out/
+.pnpm-store/
+
+# Environment files and keys (CRITICAL: Never commit secrets!)
+.env
+.env*.local
+*.secret
+backend/.env
+frontend/.env
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+.vscode/
